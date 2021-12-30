@@ -1,0 +1,25 @@
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: aquamarine;
+    margin: 2% 0 0 2%;
+    width: 45%;
+    /* text-align: center; */
+    display: flex;
+}
+.aimg{
+    width: 30%;
+    height: 100%;
+    align-self: center;
+}
+h1{
+    margin: 5px;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 5px;
+}
