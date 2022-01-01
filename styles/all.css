@@ -1,0 +1,136 @@
+:root{
+    --golden: #f3ab25;
+    --yellow: #ffdd03;
+    --cream: #fbfcd4;
+    --bl: #0a0a0a;
+    --ble: #151515;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: var(--golden);
+}
+
+
+/*---------------------------------------
+FONTS
+----------------------------------------*/
+@font-face {
+    font-family: 'brush';
+    src: url(fonts/brush.ttf);
+}
+@font-face {
+    font-family: 'chakrareq';
+    src: url(fonts/chakra\ regular.ttf);
+}
+@font-face {
+    font-family: 'chakrabold';
+    src: url(fonts/chakrabold.ttf);
+}
+@font-face {
+    font-family: 'chakralight';
+    src: url(fonts/chakralight.ttf);
+}
+@font-face {
+    font-family: 'love';
+    src: url(fonts/love.ttf);
+}
+@font-face {
+    font-family: 'noto';
+    src: url(fonts/noto.otf);
+}
+@font-face {
+    font-family: 'notoblack';
+    src: url(fonts/notoblack.otf);
+}
+@font-face {
+    font-family: 'notoreq';
+    src: url(fonts/notoreg.otf);
+}
+@font-face {
+    font-family: 'ops';
+    src: url(fonts/ops.ttf);
+}
+@font-face {
+    font-family: 'patch';
+    src: url(fonts/patch.ttf);
+}
+@font-face {
+    font-family: 'penscript';
+    src: url(fonts/penscript.ttf);
+}
+@font-face {
+    font-family: 'rye';
+    src: url(fonts/rye.ttf);
+}
+
+@font-face {
+    font-family: 'scaps';
+    src: url(fonts/scaps.ttf);
+}
+@font-face {
+    font-family: 'shadow';
+    src: url(fonts/shadow.ttf);
+}
+@font-face {
+    font-family: 'stall';
+    src: url(fonts/stall.ttf);
+}
+@font-face {
+    font-family: 'tech';
+    src: url(fonts/tech.ttf);
+}
+
+body{
+    background-color: var(--ble);
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+}
+.header-img{
+    width: 8%;
+}
+.header h1{
+    font-size: 65px;
+    font-family: 'love';
+    color: #f3ab25;
+    letter-spacing: 5px;
+}
+
+
+
+/*------------------------------
+FOOTER STYLING
+-------------------------------*/
+.footer{
+    border: 2px solid white;
+    font-size: 20px;
+    margin-top: 2%;
+}
+.footer b,p{
+    padding: 5px 15px;
+}
+.footer-top{
+    font-family: 'penscript';
+    font-size: 28px;
+}
+.footer-main{
+    text-align: center;
+    margin-top: 1.5%;
+}
+.footer a{
+    font-size: 25px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+}
