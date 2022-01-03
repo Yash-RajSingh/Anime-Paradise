@@ -3,7 +3,7 @@
     --yellow: #ffdd03;
     --cream: #fbfcd4;
     --bl: #0a0a0a;
-    --ble: #151515;
+    --ble: #151515f7;
 }
 *{
     margin: 0;
@@ -89,17 +89,17 @@ a{
     text-decoration: none;
 }
 .header{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2%;
 }
 .header-img{
-    width: 8%;
+    width: 6%;
 }
 .header h1{
-    font-size: 65px;
+    font-size: 60px;
     font-family: 'love';
     color: #f3ab25;
     letter-spacing: 5px;
@@ -111,9 +111,10 @@ a{
 FOOTER STYLING
 -------------------------------*/
 .footer{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     font-size: 20px;
-    margin-top: 2%;
+    margin-top: 10%;
+    background-color: #262626f7;
 }
 .footer b,p{
     padding: 5px 15px;

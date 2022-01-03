@@ -1,15 +1,9 @@
 .pseudobody{
-    width: 98%;
-    margin: 0 auto;
-    border: 2px solid pink;
+    /* border: 2px solid pink; */
+    width: 80%;
 }
 .span{
     color: var(--yellow);
-}
-.placeholder{
-    width: 70%;
-    height: 70vh;
-    margin-left:15%;
 }
 
 h3{
@@ -17,26 +11,71 @@ h3{
     font-size: 25px;
     margin: 2% 0 0 1%;
 }
+h4{
+    text-align: center;
+}
 .see-more{
     float: right;
 }
-.main1,.main2,.main3,.main4,.main5,.main6{
-    border: 2px solid green;
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 2%;
+.main2,.main3,.main4,.main5,.main6,.main7{
+    /* border: 2px solid green; */
+    width: 97%;
+    margin: 0 0 0 2%;
+    margin-top: 5%;
 }
-#container-main1, #container-main2, #container-main3, #container-main4, #container-main5, #container-main6{
+.main1{
+    margin-top: 0%;
+}
+#container-main1, #container-main2, #container-main3, #container-main4, #container-main5, #container-main6,#container-main7{
     display: flex;
     flex-wrap: wrap;
 }
 .card{
-    width: 18%;
-    margin: 2% 0 0 1%;
+    height: fit-content;
     /* background-color: #ffdd0352; */
-    border: 1px solid #ffdd03;
+    /* border: 1px solid #ffdd03; */
+    font-family: 'chakrareq';
 }
 .card-image{
-    height: 85%;
+    height: 350px;
     width: 100%;
+}
+.song-card{
+    width: 18%;
+    height: fit-content;
+    margin: 2% 0 0 1%;
+    font-family: 'chakrareq';
+    line-height: 22px;
+}
+
+.main1{
+    width: 80%;
+    height: 85vh;
+    margin: 0 auto;
+    margin-top: 1%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: slider 50s infinite linear;
+    border-radius: 20px;
+}
+
+@keyframes slider {
+    0% {background-image: url(../Assets/posters/bc3.jpg); }
+    12% {background-image: url(../Assets/posters/aot.jfif); }
+    24% { background-image: url(../Assets/posters/bl1.jpg);}
+    36% { background-image: url(../Assets/posters/db.jpg);}
+    48% {background-image: url(../Assets/posters/ds.jpg); }
+    60% {background-image: url(../Assets/posters/nr1.jpg); }
+    72%{ background-image: url(../Assets/posters/fma.jpg);}
+    84% { background-image: url(../Assets/posters/mha1.jpg);}
+    100%{background-image: url(../Assets/posters/op.jpg); }
+}
+
+.container-main1{
+    width: 100%;
+}
+
+.card-container{
+    width: 23%;
+    margin: 2% 0 0 2%;
 }
