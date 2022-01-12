@@ -11,6 +11,13 @@
         <link rel="stylesheet" href="styles/all.css">
     </head>
     <body>
+        <!-- PRELOADER -->
+        <div class="preloader">
+            <div class="pre1">
+                <h6 align="center">Welcome to the Anime Paradise...... </h6>
+                <img src="Assets/yay.gif" class="pre-img">
+            </div>
+        </div>
         <!-- HEADER -->
         <div class="header">
             <img src="Assets/logo.png" class="header-img">
@@ -18,36 +25,61 @@
         </div>
 
         <!-- MAIN BODY -->
-        <div class="main1" id="main1">
+        <!-- <div class="main1" id="main1">
             <div class="container-main1">
-                <!-- <h2>Masterpieces</h2> -->
+            </div>
+        </div>   -->
+
+
+        <div class="body-container">
+            <div class="pseudobody">
+                <h2>&ensp;&ensp;Explore the Anime world</h2>
+                <div class="main2" id="main2">
+                    <h3><span class="span">|</span>&ensp;Top ranked anime</h3>
+                    <div id="container-main2"></div><br>
+                    <b onclick="openTopAnime()" class="see-more">See more &#8594;</b>
+                </div>
+                <div class="main3" id="main3">
+                    <h3><span class="span">|</span>&ensp;Upcoming anime</h3>
+                    <div id="container-main3"></div><br>
+                    <b onclick="openUpcomingAnime()" class="see-more">See more &#8594;</b>
+                </div>
+                <div class="main4" id="main4">
+                    <h3><span class="span">|</span>&ensp;Trending anime</h3>
+                    <div id="container-main4"></div><br>
+                    <b onclick="openTrendingAnime()" class="see-more">See more &#8594;</b>
+                </div>
+                <div class="main5" id="main5">
+                    <h3><span class="span">|</span>&ensp;Top ranked manga</h3>
+                    <div id="container-main5"></div><br>
+                    <b onclick="openTopManga()" class="see-more">See more &#8594;</b>
+                </div>
+                <div class="main6" id="main6">
+                    <h3><span class="span">|</span>&ensp;Trending manga</h3>
+                    <div id="container-main6"></div><br>
+                    <b onclick="openTrendingManga()" class="see-more">See more &#8594;</b>
+                </div>
+            </div>
+            <div class="sidebar">
+                <h2>Navigate</h2>
+                <div id="main7">
+                    <h3><span class="span">|</span><a onclick="openTopAnime()"> Top ranked anime</a></h3>
+                    <h3><span class="span">|</span><a onclick="openUpcomingAnime()"> Upcoming anime</a></h3>
+                    <h3><span class="span">|</span><a onclick="openTrendingAnime()"> Trending anime</a></h3>
+                    <h3><span class="span">|</span><a onclick="openTopManga()"> Top ranked manga</a></h3>
+                    <h3><span class="span">|</span><a onclick="openTrendingManga()"> Trending manga</a></h3>
+                    <!-- <h3><span class="span">|</span><a onclick="openSongs()"> Anime songs</a></h3> -->
+                    <h3><span class="span">|</span><a onclick="openFacts()"> Facts corner</a></h3>
+                </div>    
             </div>
         </div>
-        <div class="pseudobody">
-            <div class="main2">
-                <h3><span class="span">|</span>&ensp;Top ranked anime</h3>
-                <div id="container-main2"></div><br>
-                <a href="" class="see-more">See more &#8594;</a>
-            </div>
-            <div class="main3">
-                <h3><span class="span">|</span>&ensp;Upcoming anime</h3>
-                <div id="container-main3"></div><br>
-                <a href="" class="see-more">See more &#8594;</a>
-            </div>
-            <div class="main4">
-                <h3><span class="span">|</span>&ensp;Trending anime</h3>
-                <div id="container-main4"></div><br>
-                <a href="" class="see-more">See more &#8594;</a>
-            </div>
-            <div class="main5">
-                <h3><span class="span">|</span>&ensp;Top ranked manga</h3>
-                <div id="container-main5"></div><br>
-                <a href="" class="see-more">See more &#8594;</a>
-            </div>
-            <div class="main6">
-                <h3><span class="span">|</span>&ensp;Trending manga</h3>
-                <div id="container-main6"></div><br>
-                <a href="" class="see-more">See more &#8594;</a>
+        <h3 ><span class="span">|</span>&ensp;Quote of the day</h3>
+        <div class="quote-section">
+            <div class="quote-container">
+                <h4 id="quote">
+
+                </h4>
+                <div class="By" id="By"></div>
             </div>
         </div>
 
@@ -57,19 +89,20 @@
                 <b>© Anime Paradise</b>
             </div>
             <div class="footer-main">
-                <a href="">Home</a> &emsp;  &emsp;
-                <a href="">Search</a> &emsp;  &emsp;
-                <a href="">Trending</a> &emsp;  &emsp;
-                <a href="">Top</a> &emsp;  &emsp;
-                <a href="">Upcoming</a>
+                <a href="#">Home</a> &emsp;  &emsp;
+                <!-- <a href="">Search</a> &emsp;  &emsp; -->
+                <a href="#main4">Trending</a> &emsp;  &emsp;
+                <a href="#main2">Top</a> &emsp;  &emsp;
+                <a href="#main3">Upcoming</a>
             </div>
             <div class="footer-bottom">
-                <p>Star Ainme Paradise on <a href="">Github</a></p>
+                <p>Star Ainme Paradise on <a href="https://github.com/Yash-RajSingh/Anime-Paradise">Github</a></p>
                 <p>Build by:- Yash Raj Singh</p>
             </div>
         </div>
 
+        <!-- SCRIPTS -->
         <script src="scripts/script.js" async defer></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/display.js"></script>
     </body>
 </html>

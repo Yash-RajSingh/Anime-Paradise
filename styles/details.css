@@ -1,0 +1,266 @@
+.body-container{display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1.7fr 0.3fr; 
+    gap: 0px 0px; 
+    margin-top: 1%;
+    /* border: 2px solid red; */
+}
+#heading{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'tech';
+    -webkit-text-stroke: 0.5px black;
+    background-color: var(--yellow);
+    border: 1px solid black;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid pink; */
+}
+.card{
+    width: 95%;
+    margin: 0 auto;
+}
+.sub{
+    font-size: 35px;
+    font-family: 'chakrabold';
+    letter-spacing: 5px;
+    -webkit-text-stroke: 0.4px white;
+    margin: 2% 0 0 3%;
+    padding-bottom: 10px;
+}
+
+.card-image{
+    width: 100%;
+}
+
+
+/* SIDEBAR STYLING */
+#main7{
+    margin-top: 7%;
+}
+
+.sidebar h3{
+    font-family: 'tech';
+    font-size: 25px;
+    margin: 2% 0 0 1%;
+}
+#main7 h3{
+    padding: 5px 0;
+    font-size: 20px;
+}
+.sidebar h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'tech';
+    -webkit-text-stroke: 0.5px black;
+    background-color: var(--yellow);
+    border: 1px solid black;
+}
+/* -----------------------------------------------------------------
+TOP ANIME CARD - 2
+------------------------------------------------------------------- */
+.TPa-card{
+    width: 30%;
+    margin: 2% 0 0 2%;
+    border-radius: 0px 30px 0px 30px;
+    background: var(--golden);
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.8fr 1.2fr; 
+    grid-template-rows: 1.3fr; 
+    gap: 11px 0px; 
+}
+.TPa-img{
+    width: 100%;
+    height: 90%;
+    margin: 5px 0 0 5px;
+    border: 5px solid black;
+    border-radius: 20px ;
+}
+.TPa-2{
+    margin: auto;
+}
+.TPa-2 h3{
+    color: black;
+    font-size: 21px;
+    margin: 0 0 0 1%;
+    font-family: 'rye';
+}
+.TPa-2 p{
+    color: black;
+    font-family: 'chakrabold';
+}
+
+/* -----------------------------------------------------------------
+UPCOMING ANIME CARD - 2
+------------------------------------------------------------------- */
+.upanime{
+    width: 40%;
+    margin: 2% 0 0 2%;
+    background: var(--golden);
+    border-radius: 0 30px 0 30px;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.9fr 1.1fr; 
+    grid-template-rows: 1.3fr; 
+    gap: 0px 0px; 
+}
+
+.upa-img{
+    width: 90%;
+    height: 210px;
+    margin: 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.upanime h3{
+    font-size: 21px;
+    margin: 0 0 0 1%;
+    font-family: 'rye';
+    color: black;
+}
+.upanime p{
+    color: black;
+    font-family: 'chakrabold';
+}
+.upa-2{
+    margin: auto;  
+}
+/* -----------------------------------------------------------------
+TRENDING ANIME CARD - 3
+------------------------------------------------------------------- */
+.TA-card{
+    width: 45%;
+    height: min-content;
+    margin: 2% 0 0 4%;
+    border-radius: 0 20px 0 20px;
+    background: var(--golden);
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 0.7fr 1.2fr; 
+    grid-template-rows: 1.3fr; 
+    gap: 0px 10px; 
+}
+.TA-c h3{
+    color: black;
+    font-size: 21px;
+    /* width: 97%; */
+    margin: 0 0 0 1%;
+    font-family: 'rye';
+}
+.TA-c{
+    margin: auto;
+}
+.TA-c p{
+    color: black;
+    font-family: 'chakrabold';
+}
+
+.TA-img{
+    width: 100%;
+    height: 80%;
+    margin: 10% 0;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.TA-i{
+    margin: 0 0 0 3%;
+}
+/* -----------------------------------------------------------------
+TOP MANGA CARD - 4
+------------------------------------------------------------------- */
+.tpmanga{
+    width: 40%;
+    padding: 10px;
+    height: fit-content;
+    /* margin: 1% auto; */
+    margin: 2% 0 0 3%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: var(--golden);
+    color: black;
+    display: flex;
+}
+.tpm-img{
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    border: 4px solid black;
+    border-radius: 8px;
+}
+
+.tpm-content-d {
+    margin: auto;
+    width: 70%;
+}
+.tpm-content-d h3{
+    color: black;
+    font-size: 23px;
+    font-family: 'rye';
+}
+.tpm-content-d p{
+    color: black;
+    font-family: 'chakrabold';
+    width: max-content;
+    margin-left: 5%;
+}
+.link{
+    float: right;
+    margin-right: 5px;
+    background: rgba(255, 0, 0, 0.801);
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+    font-family: 'chakrabold';
+}
+
+
+
+/* -----------------------------------------------------------------
+TRENDING MANGA CARD - 5
+------------------------------------------------------------------- */
+
+.trmcard{
+    width: 90%;
+    margin: 2%;
+    /* border: 2px solid green; */
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1.4fr 0.6fr; 
+    gap: 10px 10px; 
+    background-color: var(--golden);
+    border-radius: 0px 40px 0px 40px;
+}
+.trmimg{
+    width: 80%;
+    height: 88%;
+    margin: 20px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.d1{
+    /* border: 1px solid pink; */
+    color: #000000;
+    padding: 10px;
+}
+.d1 h3{
+    color: black;
+    font-size: 30px;
+    font-family: 'rye';
+
+}
+.d1 p{
+    color: black;
+    font-size: 18x;
+    font-family: 'chakrabold';
+}
+.p2{
+    margin-top: 2%;
+}
+

@@ -35,26 +35,7 @@ FONTS
     font-family: 'love';
     src: url(fonts/love.ttf);
 }
-@font-face {
-    font-family: 'noto';
-    src: url(fonts/noto.otf);
-}
-@font-face {
-    font-family: 'notoblack';
-    src: url(fonts/notoblack.otf);
-}
-@font-face {
-    font-family: 'notoreq';
-    src: url(fonts/notoreg.otf);
-}
-@font-face {
-    font-family: 'ops';
-    src: url(fonts/ops.ttf);
-}
-@font-face {
-    font-family: 'patch';
-    src: url(fonts/patch.ttf);
-}
+
 @font-face {
     font-family: 'penscript';
     src: url(fonts/penscript.ttf);
@@ -64,18 +45,8 @@ FONTS
     src: url(fonts/rye.ttf);
 }
 
-@font-face {
-    font-family: 'scaps';
-    src: url(fonts/scaps.ttf);
-}
-@font-face {
-    font-family: 'shadow';
-    src: url(fonts/shadow.ttf);
-}
-@font-face {
-    font-family: 'stall';
-    src: url(fonts/stall.ttf);
-}
+
+
 @font-face {
     font-family: 'tech';
     src: url(fonts/tech.ttf);
@@ -88,15 +59,19 @@ body{
 a{
     text-decoration: none;
 }
+
+/*------------------------------
+HEADER STYLING
+-------------------------------*/
+
 .header{
-    /* border: 2px solid white; */
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 2%;
 }
 .header-img{
     width: 6%;
+    margin-left: 5%;
 }
 .header h1{
     font-size: 60px;
@@ -104,8 +79,6 @@ a{
     color: #f3ab25;
     letter-spacing: 5px;
 }
-
-
 
 /*------------------------------
 FOOTER STYLING
@@ -134,4 +107,60 @@ FOOTER STYLING
     display: flex;
     justify-content: space-between;
     margin-top: 1%;
+}
+
+/*------------------------------
+SCROLLBAR STYLING
+-------------------------------*/
+::-webkit-scrollbar{
+    width: 7px;
+    background: black;
+    /* border: 0.5px solid #797979; */
+    border-radius: 2px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    border-radius: 4px;
+    background-clip: padding-box;
+}
+ /* EXTRAS */
+.span{
+    color: var(--yellow);
+}
+
+/*----------------------
+PRELOADER STYLING
+------------------------- */
+.preloader{
+    width: 99.2vw;
+    height: 99.5vh;
+    position: fixed;
+    background: #f3ab25;
+    border: dashed;
+}
+.pre1{
+    width: 98%;
+    height: 96%;
+    margin: auto;
+    border-spacing: 30px;
+    border: 7px double rgb(0, 0, 0);
+}
+.pre-img{
+    border: 2px solid var(--golden);
+    height: 70%;
+    width: 30%;
+    margin: 0 0 0 33%;
+}
+h6{
+    color: black;
+    font-size: 50px;
+    font-family: 'love';
+    margin: 0 auto;
+    width: max-content;
+    letter-spacing: 0;
+    margin-top: 4%;
+    padding-bottom: 30px;
+    border-bottom: solid 2px #000000;
+    border-radius: 50%;
 }

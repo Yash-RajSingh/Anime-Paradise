@@ -4,6 +4,8 @@ const container4 = document.getElementById('container-main4');
 const container5 = document.getElementById('container-main5');
 const container6 = document.getElementById('container-main6');
 const container7 = document.getElementById('container-main7');
+const quoteContainer = document.getElementById('quote');
+const By = document.getElementById('By');
 
 //---------2-----------------
 //FOR TOP RANKED ANIME DATABASE
@@ -22,10 +24,6 @@ const topAnime = async () => {
             </div>
             </div>`
     }
-            // <div class="subcard">
-            //     <b>Ranked</b> - ${current.rank}<br>
-            //     <a href="${current.url}">Details...</a>
-            // </div>
 }
 topAnime()
 
@@ -51,10 +49,6 @@ const upcomningAnime = async () =>{
             </div>
             </div>`
     }
-            // <div class="subcard">
-            //     <b> Ranked - ${rank}</b><br>
-            //     <a href="${link}">Details...</a>
-            // </div>
 }
 upcomningAnime()
 
@@ -77,9 +71,6 @@ const trendingAnime = async () =>{
             </div>
             `
     }
-            // <div class="subcard">
-            //     <a href="${list[i].trailer_url}">Watch trailer...</a>
-            // </div>
 }
 trendingAnime();
 
@@ -103,10 +94,6 @@ const topManga = async () =>{
             </div>
             </div>`
     }
-            // <div class="subcard">
-            //     <b>Ranked - </b>${current.rank}<br>
-            //     <a href="${current.url}">Details...</a>
-            // </div>
 }
 topManga()
 
@@ -117,7 +104,7 @@ const trendingManga = async () =>{
         "method": "GET",
     })
     const data = await req.json();
-    const list = data.data;
+    // const list = data.data;
     for(var i=0; i<4;i++){
         // console.log("trm- ",data.data[0].attributes);
         var img = data.data[i].attributes.posterImage.original;
@@ -129,39 +116,17 @@ const trendingManga = async () =>{
             </div>
             </div>`;
         }
-        // <div class="subcard>
-        //     <b>Ranked - </b>${data.data[i].attributes.popularityRank}<br>
-        //     <b>Status - </b> ${data.data[i].attributes.status}
-        // </div>
 }
 trendingManga();
 
 
-//ANIME SONGS -
-const songs = async () =>{
-    const req = await fetch("https://api.aniapi.com/v1/song", {
-        "method": "GET",
-    })
-    const data = await req.json();
-    const list = data.data.documents;
-    for(var i=0; i<5;i++){
-        // console.log(list[i]);
-        container7.innerHTML += `<div class="song-card">
-        <b>Title-</b>${list[i].title}<br>
-        <b>Album-</b>${list[i].album}<br>
-        <b>Artist-</b>${list[i].artist}<br>
-        <a href = "${list[i].open_spotify_url}">Check out song</a>
-        </div>`;
-    }
-}
-// songs();
-
 //GET QUOTES
-// fetch('https://animechan.vercel.app/api/random')
-//     .then(response => response.json())
-// .then(quote => console.log(quote))
+const getQuote = async () =>{
+    const req = await fetch("https://animechan.vercel.app/api/random");
+    const data = await req.json();
+    // console.log(data);
+    quoteContainer.innerText = `" ${data.quote} "`;
+    By.innerHTML = `<p> - ${data.character} <br>from ${data.anime} </p>`;
+}
+getQuote();
 
-//FACTS CORNER
-// fetch('https://anime-facts-rest-api.herokuapp.com/api/v1/black_clover')
-// .then(response => response.json())
-// .then(anime => console.log(anime))
