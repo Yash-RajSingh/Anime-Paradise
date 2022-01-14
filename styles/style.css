@@ -2,7 +2,7 @@
   grid-auto-columns: 1fr; 
   grid-template-columns: 1.7fr 0.3fr; 
   gap: 0px 0px; 
-  margin-top: 4%;
+  margin-top: 2%;
   /* border: 2px solid red; */
 }
 
@@ -22,6 +22,15 @@ h4{
 }
 .see-more{
     float: right;
+    cursor: pointer;
+    background: var(--yellow);
+    color: black;
+    font-family: 'chakralight';
+    padding: 5px;
+    border-radius: 10px;
+}
+.see-more:hover{
+    padding: 7px;
 }
 .main2,.main3,.main4,.main5,.main6,.main7{
     /* border: 2px solid green; */
@@ -122,4 +131,5 @@ h2{
  #main7 h3{
     padding: 5px 0;
     font-size: 20px;
- }
+    cursor: pointer;
+}

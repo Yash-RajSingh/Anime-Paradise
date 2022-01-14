@@ -187,7 +187,7 @@ const TrendManga = async () => {
                 <p>${list[i].attributes.description}</p>
                 <p class="p2">Chapters - ${list[i].attributes.chapterCount} &emsp;&emsp;&emsp;&emsp;&emsp;
                 Status - ${list[i].attributes.status} &emsp;&emsp;&emsp;&emsp;&emsp;
-                Average rating - ${list[i].attributes.averageRating}<br>
+                Average rating - ${list[i].attributes.averageRating}<br><br>
                 Start date- ${list[i].attributes.startDate} &emsp;&emsp;&emsp;&emsp;&emsp; 
                 End date - ${date}
                 </p>

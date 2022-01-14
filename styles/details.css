@@ -75,6 +75,9 @@ TOP ANIME CARD - 2
     grid-template-rows: 1.3fr; 
     gap: 11px 0px; 
 }
+.TPa-card:hover{
+    box-shadow: 8px 8px 5px rgb(218, 209, 87);
+}
 .TPa-img{
     width: 90%;
     height: 90%;
@@ -213,7 +216,8 @@ TOP MANGA CARD - 4
 .link{
     float: right;
     margin-right: 5px;
-    background: rgba(255, 0, 0, 0.801);
+    background: var(--yellow);
+    border: 1px solid black;
     padding: 5px;
     border-radius: 10px;
     color: black;
