@@ -1,6 +1,6 @@
 .body-container{display: grid; 
     grid-auto-columns: 1fr; 
-    grid-template-columns: 1.7fr 0.3fr; 
+    grid-template-columns: 1.8fr 0.2fr; 
     gap: 0px 0px; 
     margin-top: 1%;
     /* border: 2px solid red; */
@@ -8,24 +8,26 @@
 #heading{
     color: white;
     text-align: center;
-    font-size: 40px;
-    font-family: 'tech';
-    -webkit-text-stroke: 0.5px black;
+    font: 2.5rem 'tech';
+    -webkit-text-stroke: 0.09rem black;
     background-color: var(--yellow);
     border: 1px solid black;
 }
 
 #container{
+    margin-top: 2%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     /* border: 2px solid pink; */
 }
 .card{
-    width: 95%;
+    /* width: 95%; */
     margin: 0 auto;
+    border: 2px solid green;
 }
 .sub{
-    font-size: 35px;
+    font-size: 3px;
     font-family: 'chakrabold';
     letter-spacing: 5px;
     -webkit-text-stroke: 0.4px white;
@@ -40,62 +42,67 @@
 
 /* SIDEBAR STYLING */
 #main7{
-    margin-top: 7%;
+    margin-top: 10%;
 }
 
 .sidebar h3{
-    font-family: 'tech';
-    font-size: 25px;
-    margin: 2% 0 0 1%;
+    font: 1rem 'tech';
+    margin: 5% 0 0 1%;
+    cursor: pointer;
 }
-#main7 h3{
-    padding: 5px 0;
-    font-size: 20px;
-}
+
 .sidebar h2{
     color: white;
     text-align: center;
-    font-size: 40px;
-    font-family: 'tech';
-    -webkit-text-stroke: 0.5px black;
+    font: 2.42rem 'tech';
+    -webkit-text-stroke: 0.08rem black;
     background-color: var(--yellow);
     border: 1px solid black;
 }
+
+
+
 /* -----------------------------------------------------------------
 TOP ANIME CARD - 2
 ------------------------------------------------------------------- */
 .TPa-card{
-    width: 30%;
-    margin: 2% 0 0 2%;
-    border-radius: 0px 30px 0px 30px;
+    width: 20rem;
+    margin: 1.5% 0;
+    border-radius: 5px;
     background: var(--golden);
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 0.8fr 1.2fr; 
     grid-template-rows: 1.3fr; 
-    gap: 11px 0px; 
+    gap: 2%px 0px; 
 }
 .TPa-card:hover{
-    box-shadow: 8px 8px 5px rgb(218, 209, 87);
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.47);
 }
 .TPa-img{
     width: 90%;
-    height: 90%;
-    margin: 5px 0 0 5px;
-    border: 5px solid black;
-    border-radius: 20px ;
+    height: 100%;
+    position: relative;
+    top: 6%;
+    left: 6%;
+    border: 1px solid black;
+    border-radius: 10px ;
 }
 .TPa-2{
     margin: auto;
+    width: 100%;
+    height: 90%;
+    /* border: 1.5px solid black; */
 }
 .TPa-2 h3{
+    width: 99%;
     color: black;
-    font-size: 21px;
-    margin: 0 0 0 1%;
-    font-family: 'rye';
+    font: 1.3rem 'rye';
 }
 .TPa-2 p{
     color: black;
+    line-height: 1.5rem;
+    margin: 5% 0;
     font-family: 'chakrabold';
 }
 
@@ -214,14 +221,14 @@ TOP MANGA CARD - 4
     margin-left: 5%;
 }
 .link{
-    float: right;
-    margin-right: 5px;
     background: var(--yellow);
     border: 1px solid black;
-    padding: 5px;
-    border-radius: 10px;
+    border-radius: 3px;
+    width: 5rem;
     color: black;
-    font-family: 'chakrabold';
+    text-align: center;
+    font: 1rem 'chakrabold';
+    margin: 0 3% 3% auto;
 }
 
 

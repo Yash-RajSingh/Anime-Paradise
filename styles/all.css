@@ -11,7 +11,6 @@
     color: var(--golden);
 }
 
-
 /*---------------------------------------
 FONTS
 ----------------------------------------*/
@@ -44,9 +43,6 @@ FONTS
     font-family: 'rye';
     src: url(fonts/rye.ttf);
 }
-
-
-
 @font-face {
     font-family: 'tech';
     src: url(fonts/tech.ttf);
@@ -70,24 +66,22 @@ HEADER STYLING
     gap: 2%;
 }
 .header-img{
-    width: 6%;
+    width: 4.5rem;
     margin-top: 5px;
     margin-left: 5%;
 }
 .header h1{
-    font-size: 60px;
+    font-size: 3.25rem;
     font-family: 'love';
     color: #f3ab25;
-    letter-spacing: 5px;
-    margin-top: 5px;
+    letter-spacing: 0.5rem;
 }
 
 /*------------------------------
 FOOTER STYLING
 -------------------------------*/
 .footer{
-    /* border: 2px solid white; */
-    font-size: 20px;
+    font-size: 2rem;
     margin-top: 10%;
     background-color: #262626f7;
 }
@@ -96,15 +90,14 @@ FOOTER STYLING
 }
 .footer-top{
     font-family: 'penscript';
-    font-size: 28px;
+    font-size: 2.5rem;
 }
 .footer-main{
     text-align: center;
     margin-top: 1.5%;
 }
 .footer a{
-    font-size: 25px;
-    font-family: 'chakralight';
+    font: 1.5rem 'chakralight';
     cursor: pointer;
 }
 .footer a:hover{
@@ -116,6 +109,7 @@ FOOTER STYLING
 }
 
 .footer-bottom{
+    font: 1.5rem 'chakralight';
     display: flex;
     justify-content: space-between;
     margin-top: 1%;
@@ -125,7 +119,7 @@ FOOTER STYLING
 SCROLLBAR STYLING
 -------------------------------*/
 ::-webkit-scrollbar{
-    width: 7px;
+    width: 0.2rem;
     background: black;
     /* border: 0.5px solid #797979; */
     border-radius: 2px;
@@ -145,8 +139,9 @@ SCROLLBAR STYLING
 PRELOADER STYLING
 ------------------------- */
 .preloader{
-    width: 99.2vw;
-    height: 99.5vh;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
     position: fixed;
     background: #f3ab25;
     border: dashed;
@@ -154,25 +149,56 @@ PRELOADER STYLING
 .pre1{
     width: 98%;
     height: 96%;
-    margin: auto;
     border-spacing: 30px;
     border: 7px double rgb(0, 0, 0);
 }
 .pre-img{
     border: 2px solid var(--golden);
-    height: 70%;
-    width: 30%;
-    margin: 0 0 0 33%;
+    height: 60%;
+    width: 20rem;
+    display: block;
+      margin: 0 auto;
 }
 h6{
     color: black;
-    font-size: 50px;
+    font-size: 3rem;
     font-family: 'love';
-    margin: 0 auto;
+    margin: 2% auto;
     width: max-content;
     letter-spacing: 0;
-    margin-top: 4%;
-    padding-bottom: 30px;
+    padding-bottom: 2rem;
     border-bottom: solid 2px #000000;
     border-radius: 50%;
+}
+
+/* ------------------------------
+ MEDIA QUERIES 
+ -------------------------------- */
+
+/* PRELOADER  */
+@media only screen and (max-device-width: 300px) {
+    h6{
+        width: fit-content;
+        font-size: 2.5rem;
+        margin: 0;
+        margin-top: 10%;
+    }
+}
+
+/* HEADER  */
+@media only screen and (min-device-width: 300px) and (max-device-width: 400px){
+    .header h1{
+        font-size: 1.5rem;
+    }
+    .header-img{
+        width: 3rem;
+        margin: 2%;
+    }
+
+        
+    .footer a,p,b{
+        font-size: 1rem;
+    }
+
+
 }

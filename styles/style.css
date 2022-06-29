@@ -2,21 +2,18 @@
   grid-auto-columns: 1fr; 
   grid-template-columns: 1.7fr 0.3fr; 
   gap: 0px 0px; 
-  margin-top: 2%;
-  /* border: 2px solid red; */
+  /* margin-top: 1; */
 }
 
 .pseudobody{
-    /* border: 2px solid pink; */
     width: 100%;
 }
 
-
 h3{
-    font-family: 'tech';
-    font-size: 25px;
-    margin: 2% 0 0 1%;
+    font: 2rem 'tech';
+    margin:  2% 0 1%;
 }
+
 h4{
     text-align: center;
 }
@@ -34,81 +31,66 @@ h4{
 }
 .main2,.main3,.main4,.main5,.main6,.main7{
     /* border: 2px solid green; */
-    width: 97%;
+    border: 2px solid purple;
+    width: 99%;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 5rem;
 }
-.main2{
-    margin-top: 2%;
-}
+
 .main1{
-    margin-top: 0%;
+    margin-top: 0;
 }
 #container-main1, #container-main2, #container-main3, #container-main4, #container-main5, #container-main6,#container-main7{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
+.card-container{
+    border: 2px solid white;
+    width: 15rem;
+    /* margin: 2% 0 0 2%; */
+    margin-top: 2rem;
+}
+
 .card{
-    height: fit-content;
+    width: 100%;
+    /* height: fit-content; */
     font-family: 'chakrareq';
 }
 .card-image{
-    height: 350px;
+    height: 20rem;
     width: 100%;
 }
 
-.main1{
-    width: 80%;
-    height: 85vh;
-    margin: 0 auto;
-    margin-top: 1%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: slider 50s infinite linear;
-    border-radius: 20px;
+
+.main2 {
+    margin-top: 0;
 }
 
-@keyframes slider {
-    0% {background-image: url(../Assets/posters/bc3.jpg); }
-    12% {background-image: url(../Assets/posters/aot.jfif); }
-    24% { background-image: url(../Assets/posters/bl1.jpg);}
-    36% { background-image: url(../Assets/posters/db.jpg);}
-    48% {background-image: url(../Assets/posters/ds.jpg); }
-    60% {background-image: url(../Assets/posters/nr1.jpg); }
-    72%{ background-image: url(../Assets/posters/fma.jpg);}
-    84% { background-image: url(../Assets/posters/mha1.jpg);}
-    100%{background-image: url(../Assets/posters/op.jpg); }
-}
 
 .container-main1{
     width: 100%;
 }
 
-.card-container{
-    width: 23%;
-    margin: 2% 0 0 2%;
-}
-
 .quote-section{
-    width: 85%;
+    width: 85vw;
     margin: 0 auto;
-}
-.qHead{
-    font-size: 35px;
 }
 
 .By{
     float: right;
-    margin-top: 2%;
+    margin-top: 2rem;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.3rem;
     font-family: 'chakralight';
 }
+
 #quote{
-    margin-top: 3%;
-    font-size: 50px;
+    margin-top: 2rem;
+    font-size: 2.5rem;
     font-family: 'love';
-    letter-spacing: 5px;
+    letter-spacing: 0.3rem;
     text-align: center;
 }
 
@@ -116,20 +98,33 @@ h4{
 h2{
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 2.25rem;
     font-family: 'tech';
     -webkit-text-stroke: 0.5px black;
     background-color: var(--yellow);
     border: 1px solid black;
 }
 
+.pseudobody h2{
+    margin: 0;
+}
+
 /* SIDERBAR STYLING */
 
 #main7{
-    margin-top: 7%;
+    margin-top: 1rem;
 }
+
  #main7 h3{
-    padding: 5px 0;
-    font-size: 20px;
+    padding: 0.35rem 0;
+    font-size: 1.15rem;
     cursor: pointer;
+}
+
+
+
+@media (max-width:400px) {
+
+
+
 }

@@ -28,8 +28,8 @@ const TopAnime = async () => {
                 <p>Popularity rank - ${list[i].rank}<br>
                 Episodes- ${list[i].episodes}<br>
                 Type - ${list[i].type}<p>
+                </div><div></div>
                 <a href="${list[i].url}" class="link"> Details....</a>
-            </div>
         </div>`
     }
 }
