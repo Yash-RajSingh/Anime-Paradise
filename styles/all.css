@@ -1,178 +1,227 @@
-:root{
-    --golden: #f3ab25;
-    --yellow: #ffdd03;
-    --cream: #fbfcd4;
-    --bl: #0a0a0a;
-    --ble: #151515f7;
+:root {
+  --golden: #f3ab25;
+  --yellow: #ffdd03;
+  --cream: #fbfcd4;
+  --bl: #0a0a0a;
+  --ble: #151515f7;
 }
-*{
-    margin: 0;
-    padding: 0;
-    color: var(--golden);
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--golden);
 }
-
 
 /*---------------------------------------
 FONTS
 ----------------------------------------*/
 @font-face {
-    font-family: 'brush';
-    src: url(fonts/brush.ttf);
+  font-family: "brush";
+  src: url(fonts/brush.ttf);
 }
 @font-face {
-    font-family: 'chakrareq';
-    src: url(fonts/chakra\ regular.ttf);
+  font-family: "chakrareq";
+  src: url(fonts/chakra\ regular.ttf);
 }
 @font-face {
-    font-family: 'chakrabold';
-    src: url(fonts/chakrabold.ttf);
+  font-family: "chakrabold";
+  src: url(fonts/chakrabold.ttf);
 }
 @font-face {
-    font-family: 'chakralight';
-    src: url(fonts/chakralight.ttf);
+  font-family: "chakralight";
+  src: url(fonts/chakralight.ttf);
 }
 @font-face {
-    font-family: 'love';
-    src: url(fonts/love.ttf);
+  font-family: "love";
+  src: url(fonts/love.ttf);
 }
 
 @font-face {
-    font-family: 'penscript';
-    src: url(fonts/penscript.ttf);
+  font-family: "penscript";
+  src: url(fonts/penscript.ttf);
 }
 @font-face {
-    font-family: 'rye';
-    src: url(fonts/rye.ttf);
+  font-family: "rye";
+  src: url(fonts/rye.ttf);
 }
-
-
 
 @font-face {
-    font-family: 'tech';
-    src: url(fonts/tech.ttf);
+  font-family: "tech";
+  src: url(fonts/tech.ttf);
 }
 
-body{
-    background-color: var(--ble);
-    box-sizing: border-box;
+body {
+  background-color: var(--ble);
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /*------------------------------
 HEADER STYLING
 -------------------------------*/
 
-.header{
-    display: flex;
-    align-items: center;
-    gap: 2%;
+.header {
+  display: flex;
+  align-items: center;
+  gap: 3%;
 }
-.header-img{
-    width: 6%;
-    margin-top: 5px;
-    margin-left: 5%;
+.header-img {
+  width: 4.5rem;
+  margin-top: 0.5%;
+  margin-left: 1%;
 }
-.header h1{
-    font-size: 60px;
-    font-family: 'love';
-    color: #f3ab25;
-    letter-spacing: 5px;
-    margin-top: 5px;
+.header h1 {
+  font-size: 3.5rem;
+  font-family: "love";
+  color: #f3ab25;
+  letter-spacing: 0.5rem;
+  margin-top: 1%;
 }
 
 /*------------------------------
 FOOTER STYLING
 -------------------------------*/
-.footer{
-    /* border: 2px solid white; */
-    font-size: 20px;
-    margin-top: 10%;
-    background-color: #262626f7;
+.footer {
+  margin-top: 10%;
+  background-color: #262626f7;
+  padding: 0.5rem 0;
 }
-.footer b,p{
-    padding: 5px 15px;
+.footer b,
+p {
+  padding: 5px 15px;
 }
-.footer-top{
-    font-family: 'penscript';
-    font-size: 28px;
+.footer-top {
+  font: 2rem "penscript";
 }
-.footer-main{
-    text-align: center;
-    margin-top: 1.5%;
+.footer-main {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
 }
-.footer a{
-    font-size: 25px;
-    font-family: 'chakralight';
-    cursor: pointer;
+.footer a {
+  font: 2rem "tech";
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
 }
-.footer a:hover{
-    background: var(--yellow);
-    color: black;
-    padding: 5px;
-    border-radius: 10px;
-    font-weight: 600;
+.footer a:hover {
+  background: var(--yellow);
+  color: black;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
 }
 
-.footer-bottom{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1%;
+.footer-bottom {
+  font: 1.5rem "tech";
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
 }
 
 /*------------------------------
 SCROLLBAR STYLING
 -------------------------------*/
-::-webkit-scrollbar{
-    width: 7px;
-    background: black;
-    /* border: 0.5px solid #797979; */
-    border-radius: 2px;
+::-webkit-scrollbar {
+  width: 5px;
+  background: black;
+  /* border: 0.5px solid #797979; */
+  border-radius: 2px;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--yellow);
-    border-radius: 4px;
-    background-clip: padding-box;
+  background: var(--yellow);
+  /* border-radius: px; */
+  background-clip: padding-box;
 }
- /* EXTRAS */
-.span{
-    color: var(--yellow);
+/* EXTRAS */
+.span {
+  color: var(--yellow);
 }
 
 /*----------------------
 PRELOADER STYLING
 ------------------------- */
-.preloader{
-    width: 99.2vw;
-    height: 99.5vh;
-    position: fixed;
-    background: #f3ab25;
-    border: dashed;
+.preloader {
+  width: 100vw;
+  height: 99.5vh;
+  position: fixed;
+  background: #f3ab25;
+  border: dashed;
 }
-.pre1{
-    width: 98%;
-    height: 96%;
-    margin: auto;
-    border-spacing: 30px;
-    border: 7px double rgb(0, 0, 0);
+/* .pre1 {
+  width: 98%;
+  height: 96%;
+  /* margin: auto; */
+  /* border-spacing: 30px;
+  border: 7px double rgb(0, 0, 0);
+} */ 
+.pre-img {
+  border: 2px solid var(--golden);
+  height: 60%;
+  width: 22rem;
+  position: absolute;
+  left: 35%;
+  margin-top: 2%;
 }
-.pre-img{
-    border: 2px solid var(--golden);
-    height: 70%;
-    width: 30%;
-    margin: 0 0 0 33%;
+h6 {
+  color: black;
+  font: 3rem "love";
+  margin: 0 auto;
+  font-weight: 600;
+  width: max-content;
+  letter-spacing: 0;
+  margin-top: 4%;
+  padding-bottom: 30px;
+  border-bottom: solid 2px #000000;
+  border-radius: 50%;
 }
-h6{
-    color: black;
-    font-size: 50px;
-    font-family: 'love';
-    margin: 0 auto;
-    width: max-content;
-    letter-spacing: 0;
-    margin-top: 4%;
-    padding-bottom: 30px;
-    border-bottom: solid 2px #000000;
-    border-radius: 50%;
+
+@media screen and (max-width: 720px) {
+    /* HEADER  */
+  .header-img {
+    width: 2.5rem;
+  }
+  .header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+  }
+
+  /* FOOTER  */
+  .footer {
+    margin-top: 30%;
+  }
+  .footer b{
+    font-size: 1.5rem;
+  }
+  .footer-main {
+    justify-content: space-evenly;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 5%;
+  }
+  .footer a {
+    font-size: 1.25rem;
+  }
+  .footer-bottom {
+    margin-top: 5%;
+    font-size: 0.7rem;
+  }
+  .footer-bottom a {
+    font-size: 0.8rem;
+    padding: 0;
+  }
+
+  /* PRELOADER  */
+  h6{
+    font-size: 2rem;
+    margin-top: 30%;
+  }
+  .pre-img{
+    width: 15rem;
+    height: 40%;
+    left: 17%;
+  }
 }

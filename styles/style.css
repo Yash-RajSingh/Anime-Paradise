@@ -1,135 +1,187 @@
-.body-container{display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1.7fr 0.3fr; 
-  gap: 0px 0px; 
+.body-container {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  gap: 0px 0px;
   margin-top: 2%;
+  /* grid-auto-columns: 50%; */
   /* border: 2px solid red; */
 }
 
-.pseudobody{
-    /* border: 2px solid pink; */
-    width: 100%;
+.pseudobody {
+  /* border: 2px solid pink; */
+  width: 100%;
 }
 
-
-h3{
-    font-family: 'tech';
-    font-size: 25px;
-    margin: 2% 0 0 1%;
-}
-h4{
-    text-align: center;
-}
-.see-more{
-    float: right;
-    cursor: pointer;
-    background: var(--yellow);
-    color: black;
-    font-family: 'chakralight';
-    padding: 5px;
-    border-radius: 10px;
-}
-.see-more:hover{
-    padding: 7px;
-}
-.main2,.main3,.main4,.main5,.main6,.main7{
-    /* border: 2px solid green; */
-    width: 97%;
-    margin: 0 auto;
-    margin-top: 5%;
-}
-.main2{
-    margin-top: 2%;
-}
-.main1{
-    margin-top: 0%;
-}
-#container-main1, #container-main2, #container-main3, #container-main4, #container-main5, #container-main6,#container-main7{
-    display: flex;
-    flex-wrap: wrap;
-}
-.card{
-    height: fit-content;
-    font-family: 'chakrareq';
-}
-.card-image{
-    height: 350px;
-    width: 100%;
+.menuHeading {
+  font: 2rem "tech";
+  /* margin: 0 0 0 1%; */
 }
 
-.main1{
-    width: 80%;
-    height: 85vh;
-    margin: 0 auto;
-    margin-top: 1%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    animation: slider 50s infinite linear;
-    border-radius: 20px;
+.sectionHeadings {
+  font: 1rem "tech";
 }
 
-@keyframes slider {
-    0% {background-image: url(../Assets/posters/bc3.jpg); }
-    12% {background-image: url(../Assets/posters/aot.jfif); }
-    24% { background-image: url(../Assets/posters/bl1.jpg);}
-    36% { background-image: url(../Assets/posters/db.jpg);}
-    48% {background-image: url(../Assets/posters/ds.jpg); }
-    60% {background-image: url(../Assets/posters/nr1.jpg); }
-    72%{ background-image: url(../Assets/posters/fma.jpg);}
-    84% { background-image: url(../Assets/posters/mha1.jpg);}
-    100%{background-image: url(../Assets/posters/op.jpg); }
+.titles {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 1rem;
+}
+.see-more {
+  float: right;
+  cursor: pointer;
+  background: var(--yellow);
+  color: black;
+  font-family: "chakralight";
+  padding: 0.5rem;
+  border-radius: 10px;
 }
 
-.container-main1{
-    width: 100%;
+.main2,
+.main3,
+.main4,
+.main5,
+.main6,
+.main7 {
+  width: 97%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.main2 {
+  margin-top: 2%;
+}
+.main1 {
+  margin-top: 0%;
+}
+#container-main1,
+#container-main2,
+#container-main3,
+#container-main4,
+#container-main5,
+#container-main6,
+#container-main7 {
+  margin-top: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.card-container{
-    width: 23%;
-    margin: 2% 0 0 2%;
+.sectionHeadings {
+  font-size: 1rem;
 }
 
-.quote-section{
-    width: 85%;
-    margin: 0 auto;
+.card {
+  /* height: fit-content; */
+  font-family: "chakrareq";
 }
-.qHead{
-    font-size: 35px;
-}
-
-.By{
-    float: right;
-    margin-top: 2%;
-    font-weight: 600;
-    font-size: 20px;
-    font-family: 'chakralight';
-}
-#quote{
-    margin-top: 3%;
-    font-size: 50px;
-    font-family: 'love';
-    letter-spacing: 5px;
-    text-align: center;
+.card-image {
+  height: 20rem;
+  width: 100%;
 }
 
+.card-container {
+  width: 15rem;
+  margin-top: 2%;
+}
 
-h2{
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'tech';
-    -webkit-text-stroke: 0.5px black;
-    background-color: var(--yellow);
-    border: 1px solid black;
+.quote-section {
+  width: 97%;
+  margin: 5% auto 0 auto;
+}
+
+.By {
+  float: right;
+  margin-top: 2%;
+  font-weight: 600;
+  font: 1.5rem "chakralight";
+}
+#quote {
+  margin: 3% auto 0 auto;
+  width: 90%;
+  font: 3rem "love";
+  font-weight: 800;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.menuHeading {
+  color: white;
+  text-align: center;
+  font: 2rem "tech";
+  -webkit-text-stroke: 1px black;
+  background-color: var(--yellow);
+  border: 1px solid black;
 }
 
 /* SIDERBAR STYLING */
-
-#main7{
-    margin-top: 7%;
+#main7 {
+  margin-top: 7%;
 }
- #main7 h3{
-    padding: 5px 0;
-    font-size: 20px;
-    cursor: pointer;
+#main7 h3 {
+  padding: 5px 0;
+  font: 1.25rem "tech";
+  cursor: pointer;
+}
+
+.sectionHeadings {
+  font-size: 2rem;
+}
+.errorMessage{
+  font: 2rem 'tech';
+  margin-top: 3%;
+}
+
+@media screen and (max-width: 720px) {
+  .body-container {
+    grid-template-columns: 82% 18%;
+  }
+  .menuHeading {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    -webkit-text-stroke: 0.5px black;
+  }
+  .main2 {
+    margin-top: 5%;
+  }
+  .main3,
+  .main4,
+  .main5,
+  .main6,
+  .main7 {
+    margin-top: 15%;
+  }
+
+  .card-container {
+    width: 7rem;
+    margin-top: 5%;
+  }
+  .card-image {
+    height: 10rem;
+  }
+  .titles {
+    font-size: 0.5rem;
+    margin-top: 5%;
+  }
+  #main7 h3 {
+    font-size: 0.5rem;
+  }
+
+  .sectionHeadings {
+    font: 1.2rem "tech";
+  }
+  .see-more {
+    font-size: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+  }
+  #quote{
+    font-size: 1.5rem;
+    margin-top: 7%;
+  }
+.By {
+  font-size: 0.7rem;
+}
+.errorMessage{
+  font-size: 1rem;
+  text-align: center;
+}
 }
