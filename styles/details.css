@@ -1,270 +1,454 @@
-.body-container{display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1.7fr 0.3fr; 
-    gap: 0px 0px; 
-    margin-top: 1%;
-    /* border: 2px solid red; */
+.body-container {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  gap: 0px 0px;
+  margin-top: 2%;
+  /* grid-auto-columns: 1fr;  */
+  /* border: 2px solid red; */
 }
-#heading{
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'tech';
-    -webkit-text-stroke: 0.5px black;
-    background-color: var(--yellow);
-    border: 1px solid black;
-}
-
-#container{
-    display: flex;
-    flex-wrap: wrap;
-    /* border: 2px solid pink; */
-}
-.card{
-    width: 95%;
-    margin: 0 auto;
-}
-.sub{
-    font-size: 35px;
-    font-family: 'chakrabold';
-    letter-spacing: 5px;
-    -webkit-text-stroke: 0.4px white;
-    margin: 2% 0 0 3%;
-    padding-bottom: 10px;
+#heading,
+.sidebar h2 {
+  color: white;
+  text-align: center;
+  font: 2.5rem "tech";
+  -webkit-text-stroke: 2px black;
+  background-color: var(--yellow);
+  border: 1px solid black;
 }
 
-.card-image{
-    width: 100%;
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: 2px solid pink; */
 }
 
+.card-image {
+  width: 100%;
+}
 
 /* SIDEBAR STYLING */
-#main7{
-    margin-top: 7%;
+#main7 {
+  margin-top: 7%;
 }
 
-.sidebar h3{
-    font-family: 'tech';
-    font-size: 25px;
-    margin: 2% 0 0 1%;
+#main7 h3 {
+  padding: 5px 0;
+  font: 1.25rem "tech";
+  cursor: pointer;
 }
-#main7 h3{
-    padding: 5px 0;
-    font-size: 20px;
+.link {
+  float: right;
+  margin-right: 10px;
+  background: var(--yellow);
+  border: 0.5px solid black;
+  padding: 3px 8px;
+  border-radius: 7px;
+  color: black;
+  font-weight: 600;
+  font-family: "chakralight";
 }
-.sidebar h2{
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'tech';
-    -webkit-text-stroke: 0.5px black;
-    background-color: var(--yellow);
-    border: 1px solid black;
-}
+
 /* -----------------------------------------------------------------
 TOP ANIME CARD - 2
 ------------------------------------------------------------------- */
-.TPa-card{
-    width: 30%;
-    margin: 2% 0 0 2%;
-    border-radius: 0px 30px 0px 30px;
-    background: var(--golden);
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 0.8fr 1.2fr; 
-    grid-template-rows: 1.3fr; 
-    gap: 11px 0px; 
+.TPa-card {
+  width: 25rem;
+  margin: 2% 0 0 0;
+  border-radius: 5px;
+  background: var(--golden);
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 1.3fr;
+  gap: 10px 0px;
 }
-.TPa-card:hover{
-    box-shadow: 8px 8px 5px rgb(218, 209, 87);
+.TPa-card:hover {
+  box-shadow: 5px 5px 5px rgb(223, 208, 0);
 }
-.TPa-img{
-    width: 90%;
-    height: 90%;
-    margin: 5px 0 0 5px;
-    border: 5px solid black;
-    border-radius: 20px ;
+.TPa-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
 }
-.TPa-2{
-    margin: auto;
+.TPa-2 {
+  /* border: 3px solid black; */
+  margin: 8% auto auto auto;
+  width: 98%;
+  padding: 0 0 0.25rem 0.25rem;
 }
-.TPa-2 h3{
-    color: black;
-    font-size: 21px;
-    margin: 0 0 0 1%;
-    font-family: 'rye';
+.TPa-2 h3 {
+  color: black;
+  /* margin: 0; */
+  font-weight: 900;
+  font: 1.5rem "chakrabold";
+  text-align: left;
 }
-.TPa-2 p{
-    color: black;
-    font-family: 'chakrabold';
+.TPa-2 p {
+  color: black;
+  font: 1.2rem "chakrabold";
+  /* font-weight: 600; */
+  margin-top: 2%;
 }
 
 /* -----------------------------------------------------------------
 UPCOMING ANIME CARD - 2
 ------------------------------------------------------------------- */
-.upanime{
-    width: 40%;
-    margin: 2% 0 0 2%;
-    background: var(--golden);
-    border-radius: 0 30px 0 30px;
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 0.8fr 1.2fr; 
-    grid-template-rows: 1.3fr; 
-    gap: 0px 5px; 
+.upanime {
+  width: 25rem;
+  min-height: 13rem;
+  margin: 2% 0 0 0;
+  border-radius: 5px;
+  background: var(--golden);
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 1.3fr;
+  gap: 10px 0px;
 }
-
-.upa-img{
-    width: 90%;
-    height: 210px;
-    margin: 10px;
-    border: 5px solid black;
-    border-radius: 10px;
+.upanime:hover {
+  box-shadow: 5px 5px 5px rgb(223, 208, 0);
 }
-.upanime h3{
-    font-size: 21px;
-    margin: 0 0 0 1%;
-    font-family: 'rye';
-    color: black;
+.upa-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
 }
-.upanime p{
-    color: black;
-    font-family: 'chakrabold';
+.upanime h3 {
+  color: black;
+  /* margin: 0; */
+  font-weight: 900;
+  font: 1.35rem "chakrabold";
+  text-align: left;
 }
-.upa-2{
-    margin: auto;  
+.upanime p {
+  color: black;
+  font: 1.15rem "chakrabold";
+  /* font-weight: 600; */
+  padding: 0;
+  margin-bottom: 1%;
+  margin-top: 3%;
+  width: 90%;
+}
+.upa-2 {
+  padding: 0 0.5rem 0.25rem 0.5rem;
+  margin: 8% auto auto auto;
+  width: 98%;
 }
 /* -----------------------------------------------------------------
 TRENDING ANIME CARD - 3
 ------------------------------------------------------------------- */
-.TA-card{
-    width: 45%;
-    height: min-content;
-    margin: 2% 0 0 4%;
-    border-radius: 0 20px 0 20px;
-    background: var(--golden);
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 0.7fr 1.2fr; 
-    grid-template-rows: 1.3fr; 
-    gap: 0px 10px; 
+.TA-card {
+  width: 25rem;
+  min-height: 13rem;
+  margin: 2% 0 0 0;
+  border-radius: 5px;
+  background: var(--golden);
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 1.3fr;
+  gap: 10px 0px;
 }
-.TA-c h3{
-    color: black;
-    font-size: 21px;
-    /* width: 97%; */
-    margin: 0 0 0 1%;
-    font-family: 'rye';
+.TA-c h3 {
+  color: black;
+  /* margin: 0; */
+  font-weight: 900;
+  font: 1.35rem "chakrabold";
+  text-align: left;
 }
-.TA-c{
-    margin: auto;
+.TA-c {
+  padding: 0 0.5rem 0.25rem 0.5rem;
+  margin: 8% auto auto auto;
+  width: 98%;
 }
-.TA-c p{
-    color: black;
-    font-family: 'chakrabold';
-}
-
-.TA-img{
-    width: 100%;
-    height: 80%;
-    margin: 10% 0;
-    border: 5px solid black;
-    border-radius: 10px;
+.TA-c p {
+  color: black;
+  font: 1.2rem "chakrabold";
+  /* font-weight: 600; */
+  margin-top: 2%;
 }
 
-.TA-i{
-    margin: 0 0 0 3%;
+.TA-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
 }
+
 /* -----------------------------------------------------------------
 TOP MANGA CARD - 4
 ------------------------------------------------------------------- */
-.tpmanga{
-    width: 40%;
-    padding: 10px;
-    height: fit-content;
-    /* margin: 1% auto; */
-    margin: 2% 0 0 3%;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: var(--golden);
-    color: black;
-    display: flex;
+.tpmanga {
+  width: 25rem;
+  margin: 2% 0 0 0;
+  border-radius: 5px;
+  background: var(--golden);
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 1.3fr;
+  gap: 10px 0px;
 }
-.tpm-img{
-    width: 100%;
-    margin: 0 auto;
-    height: 200px;
-    border: 4px solid black;
-    border-radius: 8px;
+.tpm-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 0 0 5px;
 }
 
 .tpm-content-d {
-    margin: auto;
-    width: 70%;
+  margin-top: 8%;
+  width: 98.5%;
+  padding: 0 0 0.5rem 0.25rem;
 }
-.tpm-content-d h3{
-    color: black;
-    font-size: 23px;
-    font-family: 'rye';
+.tpm-content-d h3 {
+  color: black;
+  font-weight: 900;
+  font: 1.25rem "chakrabold";
+  text-align: left;
 }
-.tpm-content-d p{
-    color: black;
-    font-family: 'chakrabold';
-    width: max-content;
-    margin-left: 5%;
+.tpm-content-d p {
+  color: black;
+  font: 1rem "chakrabold";
+  margin-top: 2%;
+  padding: 0;
 }
-.link{
-    float: right;
-    margin-right: 5px;
-    background: var(--yellow);
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 10px;
-    color: black;
-    font-family: 'chakrabold';
-}
-
-
 
 /* -----------------------------------------------------------------
 TRENDING MANGA CARD - 5
 ------------------------------------------------------------------- */
 
-.trmcard{
-    width: 90%;
-    margin: 2%;
-    /* border: 2px solid green; */
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 1.4fr 0.6fr; 
-    gap: 10px 10px; 
-    background-color: var(--golden);
-    border-radius: 0px 40px 0px 40px;
+.trmcard {
+  width: 90%;
+  margin: 2%;
+  display: flex;
+  background-color: var(--golden);
+  border-radius: 7px;
 }
-.trmimg{
-    width: 80%;
-    height: 88%;
-    margin: 20px;
-    border: 5px solid black;
-    border-radius: 10px;
+.trmimg {
+  width: 15rem;
+  height: 100%;
+  /* margin: 20px; */
+  border-radius: 7px 0 0 7px;
 }
-.d1{
-    /* border: 1px solid pink; */
-    color: #000000;
-    padding: 10px;
+.d1 {
+  margin: 1% auto auto auto;
+  width: 98%;
+  padding: 0 0 0 0.5rem;
 }
-.d1 h3{
-    color: black;
-    font-size: 30px;
-    font-family: 'rye';
+.d1 h3 {
+  color: black;
+  font-weight: 900;
+  font: 2rem "chakrabold";
+  text-align: left;
+}
+.para {
+  color: black;
+  font: 1rem "chakralight";
+  font-weight: 600;
+  margin-top: 0%;
+  padding: 0.5rem;
+}
+.sub-d1 {
+  margin-top: 2%;
+  width: 80%;
+  height: max-content;
+}
+.sub-d1 p {
+  color: black;
+  font: 1rem "chakralight";
+  font-weight: 600;
+  margin-top: 0%;
+}
 
+.sub-d1 p:nth-child(odd) {
+  float: right;
 }
-.d1 p{
+.sub-d1 p:nth-child(5) {
+  float: none;
+}
+
+/* -----------------------------------------------------------------
+FACTS CORER - 6
+------------------------------------------------------------------- */
+.card {
+  width: 95%;
+  font: 1.25rem "tech";
+  margin-top: 1%;
+}
+.sub {
+  color: var(--yellow);
+  font: 2.5rem "chakrabold";
+  letter-spacing: 5px;
+  /* -webkit-text-stroke: 0.4px white; */
+  margin: 3% 0 0 0;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 720px) {
+  /* -----------------------------------------------------------------
+    MEDIA QUERIES
+    ------------------------------------------------------------------- */
+  .body-container {
+    grid-template-columns: 82% 18%;
+  }
+  #heading,
+  .sidebar h2 {
+    font-size: 1rem;
+    padding: 0.2rem;
+    -webkit-text-stroke: 0.5px black;
+  }
+  .link {
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-right: 5px;
+    font-size: 0.5rem;
+  }
+
+  /* SIDEBAR  */
+  #main7 h3 {
+    font-size: 0.5rem;
+  }
+
+  /* TOP ANIME CARD  */
+  .TPa-card {
+    width: 9rem;
+    margin-top: 5%;
+  }
+
+  .TPa-2 {
+    padding-right: 0rem;
+    padding-left: 0.2rem;
+  }
+  .TPa-2 h3 {
+    font-size: 0.7rem;
+  }
+  .TPa-2 p {
+    font-size: 0.5rem;
+  }
+  .TPa-card:hover {
+    box-shadow: 2px 2px 4px rgb(223, 208, 0);
+  }
+
+  /* UPCOMING ANIME  */
+  .upanime {
+    width: 9rem;
+    min-height: 7rem;
+    margin-top: 5%;
+    border-radius: 3px;
+  }
+  .upanime:hover {
+    box-shadow: 5px 5px 5px rgb(223, 208, 0);
+  }
+  .upa-img {
+    border-radius: 3px 0 0 3px;
+  }
+  .upanime h3 {
+    font-size: 0.7rem;
+  }
+  .upanime p {
+    font-size: 0.5rem;
+  }
+  .upa-2 {
+    margin-top: 5px;
+    padding-right: 0rem;
+    padding-left: 0.2rem;
+  }
+
+  /* TOP MANGA  */
+  .tpmanga {
+    width: 9rem;
+    margin-top: 5%;
+  }
+  .tpm-img {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .tpm-content-d {
+    padding-right: 0rem;
+    padding-left: 0.2rem;
+  }
+  .tpm-content-d h3 {
+    font-size: 0.7rem;
+  }
+  .tpm-content-d p {
+    font-size: 0.5rem;
+  }
+
+  /* TRENDING MANGA  */
+  .trmcard {
+    flex-direction: column;
+    margin-top: 5%;
+    border-radius: 5px 5px 0 0;
+  }
+  .trmimg {
+    width: 99%;
+    height: 20rem;
+    margin: auto;
+    border: 1px solid var(--golden);
+    border-radius: 5px 5px 0 0;
+  }
+  .d1 {
+    margin: 0 auto auto auto;
+    width: 98%;
+    padding: 0;
+  }
+  .d1 h3 {
+    font-size: 1rem;
+    margin-left: 2%;
+  }
+  .para {
     color: black;
-    font-size: 18x;
-    font-family: 'chakrabold';
-}
-.p2{
+    font: 0.5rem "chakrabold";
+    margin-top: 1%;
+    padding: 0 0.25rem 0;
+  }
+  .sub-d1 p {
+    color: black;
+    font: 0.5rem "chakralight";
+    font-weight: 600;
     margin-top: 2%;
-}
+    padding: 0;
+  }
+  .sub-d1 {
+    margin-top: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .sub-d1 p:nth-child(4) {
+    float: right;
+  }
+  .sub-d1 p:nth-child(2) {
+    float: none;
+  }
+  .sub-d1 p:nth-child(3) {
+    float: none;
+    padding: 0;
+  }
+  .sub-d1 p:nth-child(5) {
+    float: none;
+  }
 
+  /* FACTS CORNER  */
+  .sub {
+    font-size: 1.25rem;
+    margin-top: 5%;
+    letter-spacing: 0;
+  }
+  .card {
+    font-size: 0.7rem;
+    margin-top: 2%;
+  }
+}
